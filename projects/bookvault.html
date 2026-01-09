@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVault | Progetto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="container">
+    <h1>📚 BookVault</h1>
+    <p class="subtitle">
+        Web application full-stack per la gestione avanzata di una libreria personale.
+    </p>
+</header>
+
+<main class="container">
+
+    <!-- Overview -->
+    <section class="project">
+        <h2>Overview</h2>
+        <p>
+            BookVault è un progetto pensato come **caso di studio enterprise-style**, con attenzione
+            a architettura, qualità del codice, sicurezza e manutenibilità.
+            Non è una semplice CRUD app: l’obiettivo è dimostrare competenze reali full-stack.
+        </p>
+    </section>
+
+    <!-- Architettura -->
+    <section class="project">
+        <h2>Architettura</h2>
+        <p>
+            Il progetto segue una struttura **layered**:
+        </p>
+        <pre>
+Frontend Angular SPA
+        │
+        ▼
+Backend Spring Boot REST API
+        │
+        ▼
+Database PostgreSQL
+      </pre>
+        <p>
+            I layer principali:
+        </p>
+        <ul class="project-features">
+            <li><strong>Controller</strong>: gestisce le richieste REST</li>
+            <li><strong>Service</strong>: contiene la business logic</li>
+            <li><strong>Repository</strong>: interagisce con il DB via JPA/Hibernate</li>
+            <li><strong>DTO</strong>: isolano il dominio dal frontend</li>
+        </ul>
+    </section>
+
+    <!-- Stack Tecnico -->
+    <section class="project">
+        <h2>Stack Tecnico</h2>
+        <ul class="project-features">
+            <li>Java 21, Spring Boot 3</li>
+            <li>PostgreSQL</li>
+            <li>Angular SPA con routing feature-based</li>
+            <li>JWT per autenticazione e gestione ruoli</li>
+            <li>Docker per sviluppo e testing locale</li>
+        </ul>
+    </section>
+
+    <!-- Caratteristiche principali -->
+    <section class="project">
+        <h2>Caratteristiche principali</h2>
+        <ul class="project-features">
+            <li>CRUD avanzato per libri e categorie</li>
+            <li>Ricerca e filtri avanzati</li>
+            <li>Gestione ruoli USER/ADMIN e sicurezza JWT</li>
+            <li>Validazione input e gestione centralizzata errori</li>
+            <li>Frontend modulare e riusabile con componenti Angular</li>
+        </ul>
+    </section>
+
+    <!-- Link -->
+    <section class="project">
+        <h2>Links</h2>
+        <div class="actions">
+            <a href="https://github.com/USERNAME/bookvault" target="_blank" class="button">
+                GitHub Repo
+            </a>
+            <a href="../projects.html" class="button button-secondary">
+                Torna ai progetti
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="container footer">
+    <p>
+        <a href="../index.html">Home</a> ·
+        <a href="../about.html">About</a> ·
+        <a href="https://github.com/USERNAME" target="_blank">GitHub</a>
+    </p>
+</footer>
+
+</body>
+</html>
