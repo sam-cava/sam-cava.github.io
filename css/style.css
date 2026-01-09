@@ -1,0 +1,104 @@
+/* Reset di base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia e colori base */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Header */
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Intro */
+.intro {
+  margin-top: 2.5rem;
+}
+
+.intro p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Azioni / bottoni */
+.actions {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #222;
+  color: #222;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.button-secondary {
+  border-color: #777;
+  color: #555;
+}
+
+.button-secondary:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 4rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
