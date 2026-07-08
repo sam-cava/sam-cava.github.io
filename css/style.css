@@ -5,26 +5,25 @@
   box-sizing: border-box;
 }
 
-/* Tipografia e colori base */
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Helvetica, Arial, sans-serif;
+    Roboto, Helvetica, Arial, sans-serif;
   color: #222;
   background-color: #fafafa;
   line-height: 1.6;
 }
 
-/* Layout generale */
+
 .container {
-  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2rem 6rem;
 }
 
 /* Header */
 header {
-  background-color: #1e90ff; /* colore blu chiaro professionale */
-  color: #fff;
+  background-color: #ebff09;
+  color: #000000;
   padding: 2rem 1.5rem;
   border-radius: 0 0 10px 10px;
   text-align: center;
@@ -40,7 +39,7 @@ header h1 {
   font-size: 1rem;
 }
 
-/* Intro */
+
 .intro {
   margin-top: 2.5rem;
 }
@@ -62,8 +61,10 @@ header h1 {
   display: inline-block;
   padding: 0.6rem 1.2rem;
   border: 1px solid #222;
+  background-color: #ebff09;
   color: #222;
   text-decoration: none;
+  font-weight: 700;
   font-size: 0.9rem;
   transition: background-color 0.2s, color 0.2s;
   border-radius: 4px;
@@ -86,16 +87,17 @@ header h1 {
 
 /* Footer */
 footer {
-  background-color: #333; /* scuro professionale */
-  color: #fff;
+  background-color: #333;
+  color: #ebff09;
   padding: 1.5rem;
   text-align: center;
+  font-weight: 600;
   border-radius: 10px 10px 0 0;
   margin-top: 4rem;
 }
 
 footer a {
-  color: #fff;
+  color: #ebff09;
   text-decoration: none;
 }
 
@@ -110,19 +112,19 @@ footer a:hover {
   border-radius: 10px;
   padding: 1.5rem;
   margin-top: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .project:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .project h2 {
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
-  color: #1e90ff; /* colore blu header coerente */
+  color: #000000;
 }
 
 .project-description {
@@ -160,3 +162,4 @@ footer a:hover {
     align-items: flex-start;
   }
 }
+
