@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuele Cavaliere | Software Engineer</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
 </head>
+
 <body>
 
-<header class="container">
-    <h1>Samuele Cavaliere</h1>
-    <p class="subtitle">
-        Full-Stack Software Engineer · Java / Angular / Oracle
-    </p>
-</header>
+    <div class="nav-dots" id="navDots">
+        <button data-target="home" class="active" aria-label="Home"></button>
+        <button data-target="about" aria-label="Chi sono"></button>
+        <button data-target="projects" aria-label="Progetti"></button>
+        <button data-target="contact" aria-label="Contatti"></button>
+    </div>
 
-<main class="container">
+    <div class="scroll-container" id="scrollContainer">
 
-    <section class="intro">
-        <p>
-            Software engineer con esperienza nello sviluppo di applicazioni
-            enterprise, principalmente in ambito Financial & Banking.
-        </p>
-        <p>
-            Mi occupo in particolare di implementazioni backend Java/Spring che si interfacciano a database Oracle.
-            <br>
-            Focus su:
-            architettura, qualità del codice e manutenibilità.
-        </p>
-    </section>
+        <section class="container" id="home">
+            <h1 class="reveal">Samuele Cavaliere</h1>
+            <p class="reveal">
+                Full-Stack Software Engineer · Java / Angular / Oracle
+            </p>
+            <div class="scroll-hint">scorri per esplorare ↓</div>
+        </section>
 
-    <section class="actions">
-        <a href="projects.html" class="button">Progetti</a>
-        <a href="about.html" class="button">About</a>
-    </section>
+        <section class="intro" id="about">
+            <p class="reveal">
+                Software engineer con esperienza nello sviluppo di applicazioni
+                enterprise, principalmente in ambito Financial & Banking.
+            </p>
+            <p class="reveal">
+                Mi occupo in particolare di implementazioni backend Java/Spring che si interfacciano a database Oracle.
+                <br>
+                Focus su:
+                architettura, qualità del codice e manutenibilità.
+            </p>
+        </section>
 
-</main>
+        <section class="actions" id="projects">
+            <a href="projects.html" class="button reveal">Progetti</a>
+            <a href="about.html" class="button reveal">About</a>
+        </section>
 
-<footer class="container footer">
-    <p>
-        <a href="https://github.com/sam-cava" target="_blank">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/samuele-cavaliere" target="_blank">LinkedIn</a>
-    </p>
-</footer>
+        <section class="container footer" id="contact">
+            <p class="reveal">
+                <a href="https://github.com/sam-cava" target="_blank">GitHub</a> ·
+                <a href="https://www.linkedin.com/in/samuele-cavaliere" target="_blank">LinkedIn</a>
+            </p>
+        </section>
+    </div>
 
 </body>
+
 </html>
