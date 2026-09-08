@@ -21,7 +21,7 @@
 
     <div class="scroll-container" id="scrollContainer">
 
-        <section class="container" id="home-section">
+        <section class="container portfolio-section" id="home-section">
             <canvas id="matrix-background"></canvas>
             <div id="home-text-div">
                 <h1 class="reveal">Samuele Cavaliere</h1>
@@ -45,16 +45,19 @@
             </p>
         </section>
 
-        <section class="actions" id="projects">
-            <a href="projects.html" class="button reveal">Progetti</a>
-            <a href="about.html" class="button reveal">About</a>
+        <section class="actions portfolio-section" id="projects">
+            <div class="prj-buttons">
+                <a href="projects.html" class="button reveal" id="projects-btn">Progetti</a>
+                <a href="about.html" class="button reveal" id="about-btn">About</a>
+            </div>
         </section>
 
         <section class="container footer" id="contact">
-            <p class="reveal">
-                <a href="https://github.com/sam-cava" target="_blank">GitHub</a> ·
-                <a href="https://www.linkedin.com/in/samuele-cavaliere" target="_blank">LinkedIn</a>
-            </p>
+            <div class="reveal" id="contact-div">
+                <a class="a-tag-contact" href="https://github.com/sam-cava" target="_blank">GitHub</a>
+                <span class="a-tag-contact"> · </span>
+                <a class="a-tag-contact" href="https://www.linkedin.com/in/samuele-cavaliere" target="_blank">LinkedIn</a>
+            </div>
         </section>
     </div>
 

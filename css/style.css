@@ -52,7 +52,7 @@ section {
   position: relative;
 }
 
-#home-section {
+.portfolio-section {
 
   position: relative;
 }
@@ -86,6 +86,16 @@ section {
 #contact {
   background: #111;
   color: #fff;
+}
+
+#contact-div {
+
+}
+
+.a-tag-contact {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .reveal {
@@ -156,6 +166,11 @@ section {
   flex-wrap: wrap;
 }
 
+.prj-buttons {
+  display: flex;
+  gap: 10px;
+}
+
 .button {
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -163,10 +178,12 @@ section {
   background-color: #ebff09;
   color: #222;
   text-decoration: none;
+  text-align: center;
   font-weight: 700;
   font-size: 0.9rem;
   transition: background-color 0.2s, color 0.2s;
   border-radius: 4px;
+  width: 150px;
 }
 
 .button:hover {
